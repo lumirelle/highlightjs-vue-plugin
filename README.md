@@ -1,15 +1,26 @@
 # Highlight.js plugin for Vue.js
 
-[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin/latest?label=latest)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
-[![latest version](https://badgen.net/npm/v/@highlightjs/vue-plugin/next?label=next)](https://www.npmjs.com/package/@highlightjs/vue-plugin)
+[![latest version](https://badgen.net/npm/v/highlightjs-vue-plugin/latest?label=latest)](https://www.npmjs.com/package/highlightjs-vue-plugin)
 ![vue 3](https://badgen.net/badge/vue/3/green)
 ![vue 2](https://badgen.net/badge/vue/2/green)
-[![license](https://badgen.net/github/license/highlightjs/vue-plugin?color=cyan)](https://github.com/highlightjs/vue-plugin/blob/main/LICENSE)
+[![license](https://badgen.net/github/license/lumirelle/highlightjs-vue-plugin?color=cyan)](https://github.com/lumirelle/highlightjs-vue-plugin/blob/main/LICENSE)
 
-[![publish size](https://badgen.net/packagephobia/publish/@highlightjs/vue-plugin?label=size)](https://packagephobia.com/result?p=@highlightjs/vue-plugin)
-[![gzipped size](https://badgen.net/bundlephobia/minzip/@highlightjs/vue-plugin?label=gzipped)](https://bundlephobia.com/result?p=@highlightjs/vue-plugin)
-[![slack](https://badgen.net/badge/icon/slack?icon=slack&label&color=pink)](https://join.slack.com/t/highlightjs/shared_invite/zt-mj0utgqp-TNFf4VQICnDnPg4zMHChFw)
+[![publish size](https://badgen.net/packagephobia/publish/highlightjs-vue-plugin?label=size)](https://packagephobia.com/result?p=highlightjs-vue-plugin)
+[![gzipped size](https://badgen.net/bundlephobia/minzip/highlightjs-vue-plugin?label=gzipped)](https://bundlephobia.com/result?p=highlightjs-vue-plugin)
 
+> [!Note]
+>
+> This is a fork of [highlightjs/vue-plugin](https://github.com/highlightjs/vue-plugin).
+>
+> As the original repo is no longer under maintenance:
+>
+> > ["As this is now no longer part of Highlight.js core and issues here more often than not have more to do with Vue.js (or build systems, etc) than they do with Highlight.js, we're looking for a new maintainer for this project."](https://github.com/highlightjs/vue-plugin/issues/19#issue-1020216410)
+> 
+> There are some bug fixes already been merged into `main` branch, but have not been released on npm.
+>
+> The only one thing I will do is:
+> 
+> Publish it to npm, and follow the update of `main` branch of original repo.
 
 This plugin provides a `highlightjs` component for use in your Vue.js 3 applications:
 
@@ -22,12 +33,12 @@ This plugin provides a `highlightjs` component for use in your Vue.js 3 applicat
 </div>
 ```
 
-Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch here on GitHub.  Version 1.x.x is compatible with Vue.js v2; version 2.x.x with Vue.js v3.
+Note: For Vue.js version 2 support see the [1-stable](https://github.com/highlightjs/vue-plugin/tree/1-stable) branch of original repo on GitHub.  Version 1.x.x is compatible with Vue.js v2; version 2.x.x with Vue.js v3.
 
 ## Installation
 
 ```shell
-npm add @highlightjs/vue-plugin
+npm add highlightjs-vue-plugin
 ```
 
 ## Using ES6 modules / bundling
@@ -38,7 +49,7 @@ As a [Vue Plugin](https://vuejs.org/guide/reusability/plugins.html):
 import 'highlight.js/styles/stackoverflow-light.css'
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+import hljsVuePlugin from "highlightjs-vue-plugin";
 
 hljs.registerLanguage('javascript', javascript);
 
@@ -54,7 +65,7 @@ You can also simply load all "common" languages at once (as of v11):
 ```js
 import 'highlight.js/styles/stackoverflow-light.css'
 import 'highlight.js/lib/common';
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+import hljsVuePlugin from "highlightjs-vue-plugin";
 
 const app = createApp(App)
 app.use(hljsVuePlugin)
@@ -77,7 +88,7 @@ The component can also be imported locally.  However, you still have to import t
 
 <script>
 import 'highlight.js/lib/common';
-import hljsVuePlugin from "@highlightjs/vue-plugin";
+import hljsVuePlugin from "highlightjs-vue-plugin";
 
 export default {
     components: {

@@ -1,3 +1,8 @@
+## 2.1.4
+
+- Change package name to `highlightjs-plugin-vue`
+- Update dependencies
+
 ## 2.1.3
 
 - Fix `language` prop being ignored unless `autodetect` is explicitly set to `false` (#41)

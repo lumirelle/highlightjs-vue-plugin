@@ -1,14 +1,15 @@
 {
-  "name": "@highlightjs/vue-plugin",
-  "version": "2.1.1",
+  "name": "highlightjs-vue-plugin",
+  "version": "2.1.4",
   "description": "Highlight.js Vue Plugin",
   "main": "dist/highlightjs-vue.min.js",
   "module": "dist/highlightjs-vue.esm.min.js",
   "types": "dist/vue.d.ts",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public --tag next"
+    "release": "bumpp && npm publish --tag latest"
   },
   "exports": {
     ".": {
@@ -18,9 +19,10 @@
     }
   },
   "type": "module",
-  "author": "Josh Goebel <hello@joshgoebel.com>",
-  "license": "BSD-3-Clause",
+  "author": "Lumirelle <shabbyacc@outlook.com>",
+  "license": "MIT",
   "devDependencies": {
+    "bumpp": "^9.11.1",
     "rollup": "^2.42.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
