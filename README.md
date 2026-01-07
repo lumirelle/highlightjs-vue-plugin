@@ -8,7 +8,7 @@
 [![publish size](https://badgen.net/packagephobia/publish/highlightjs-vue-plugin?label=size)](https://packagephobia.com/result?p=highlightjs-vue-plugin)
 [![gzipped size](https://badgen.net/bundlephobia/minzip/highlightjs-vue-plugin?label=gzipped)](https://bundlephobia.com/result?p=highlightjs-vue-plugin)
 
-> [!Note]
+> [!Caution]
 >
 > This is a fork of [highlightjs/vue-plugin](https://github.com/highlightjs/vue-plugin).
 >
@@ -20,7 +20,9 @@
 >
 > The only one thing I will do is:
 > 
-> Publish it to npm, and follow the update of `main` branch of original repo.
+> Publish it to npm, ~~and follow the update of `main` branch of original repo~~.
+>
+> And, [Shiki](https://shiki.style/) is a better alternative for syntax highlighting in Vue.js applications.
 
 This plugin provides a `highlightjs` component for use in your Vue.js 3 applications:
 
