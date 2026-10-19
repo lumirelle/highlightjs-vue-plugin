@@ -19,8 +19,15 @@
     }
   },
   "type": "module",
-  "author": "Lumirelle <shabbyacc@outlook.com>",
-  "license": "MIT",
+  "author": "Josh Goebel <hello@joshgoebel.com>",
+  "contributors": [
+    "Lumirelle <shabbyacc@outlook.com>"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumirelle/highlightjs-vue-plugin.git"
+  },
   "devDependencies": {
     "bumpp": "^9.11.1",
     "rollup": "^2.42.3",
