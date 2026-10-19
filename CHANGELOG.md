@@ -1,3 +1,7 @@
+## 2.1.5
+
+- Legal and compliance
+
 ## 2.1.4
 
 - Change package name to `highlightjs-plugin-vue`
